@@ -14,19 +14,15 @@ header
 	overflow hidden
 	
 .controls
+	animation 1s parpadeo_navigation 3
 	.navigate-right
 		border-left-color rojito !important
-		animation 1s parpadeo_navigation 3
-		
 	.navigate-left
 		border-right-color rojito !important
-		animation 1s parpadeo_navigation 3
 	.navigate-up
 		border-bottom-color rojito !important
-		animation 1s parpadeo_navigation 3
 	.navigate-down
 		border-top-color rojito !important
-		animation 1s parpadeo_navigation 3
 		
 .home_link
 	text-shadow 3px 3px 3px black
@@ -204,7 +200,7 @@ section
 			
 @keyframes parpadeo_navigation
 	40%
-		transform scale(2)
+		transform scale(1.5s)
 		
 	20% 60%
 		transform scale(1)
