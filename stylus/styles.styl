@@ -140,64 +140,12 @@ header
 	.proceso
 		background #fad542
 		
-.arbol
-	.working_div
-		position relative
-		margin 0 auto
-		width 804px
-		figure
-			img
-				width 250px
-				float left
-				margin-right 0.5em
-						
-.setenta	
-	.f_soft
-	.f._mixed
-	.f_hard
-		img
-			width 220px
-			
-
-.workflows
-	.f_team
-	.f_propio
-		img
-			width 240px
+.tags
+	&:before
+		content "< "	
 		
-.ambientes
-	.f_ambientes
-		img
-			width 350px
-			
-.gh-pages
-	.key
-		img
-			border 4px solid grisesito
-			
-
-.aviso
-		background #ff303b
-		color white 
-		padding 0.5em !important
-		border 4px solid #fad542 !important
-		animation 0.5s parpadeo infinite
-		
-		strong
-			color black
-			
-.margin-top
-	margin-top 0.5em !important
-	
-.uppercase
-	text-transform uppercase
-		
-			
-section	
-	strong
-		em
-			color #fa3c99
-			
+	&:after
+		content " >"
 @keyframes parpadeo_navigation
 	40%
 		transform scale(1.5s)
