@@ -14,6 +14,16 @@ header
 	position relative
 	overflow hidden
 	
+.aviso
+		background #ff303b
+		color white 
+		padding 0.5em !important
+		border 4px solid #fad542 !important
+		animation 0.5s parpadeo infinite
+		
+		strong
+			color black
+	
 .controls
 	animation 1s parpadeo_navigation 3
 	.navigate-right
@@ -161,6 +171,11 @@ header
 		
 	&:after
 		content " >"
+		
+.border
+	img
+		border 2px solid black !important
+		
 @keyframes parpadeo_navigation
 	40%
 		transform scale(1.5)

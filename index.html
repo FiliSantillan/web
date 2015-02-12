@@ -415,7 +415,7 @@
 				</section>
 				<section class="clases" data-background="#4393fa">
 					<h2>Clase 2</h2>
-					<h3>11 - Febrero - 2015</h3>
+					<h3>Técnicas de maquetación en HTML5 y CSS3 avanzado</h3>
 					 <div class="buttons">
 						<a href="#/4">Clase 1</a>
 						<a href="#/11">Clase 3</a>
@@ -423,6 +423,248 @@
 						<a href="#/13">Clase 5</a>
 						<a href="#/14">Clase 6</a>
 					</div>
+				</section>
+				<section>
+					<section class="f_vs_d">
+						<h2>Float vs Display</h2>
+					</section>
+					<section class="f_vs_d">
+						<h3>Float</h3>
+						<p>Con <strong>float</strong> teníamos un montón de cajitas y a todas ellas les dábamos un <strong>float left</strong> o un <strong>float right</strong>, técnicamente podíamos poner varias cajitas o contenedores una a lado de otras.</p>
+						<figure class="goku_float">
+							<img src="img/goku_float.png" alt="goku flaot" title="goku flaot">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>Los problemas que podemos encontrar con float son:</p>
+						<p>
+							<ul>
+								<li>Difícultad para organizar.</li>
+								<li>El posicionamiento visual depende del markup <strong>(HTML)</strong>.</li>
+								<li>No podemos centrar.</li>
+								<li>No podemos controlar las altruas en sistemas de columnas.</li>
+							</ul>
+						</p>
+						<p>Todo esto creando un desiquilibrio visual en el sitio web que estamos desarrollando.</p>
+					</section>
+					<section class="f_vs_d">
+						<h3>Display Table</h3>
+						<p> <strong>Display table</strong> nos ayuda a nosotros a tratar el CSS, como antes ocupábamos el HTML, nosotros podemos asignarles varios tipos de display a un elemento siempre y cuando este dentro de un contenedor con <strong>display table</strong>.</p>
+						<figure class="f_d_table">
+							<img src="img/display_table.png" alt="display table" title="display table">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p><strong>Display table</strong> nos permite tener todo del mismo tamaño o con diferentes tamaños, independientemente de su contenido o cuantos sean.</p>
+						<figure class="f_pikachu">
+							<img src="img/pikachu_display.png" alt="pikachu" title="pikachu">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>El problema de <strong>display table</strong> es que cuando tenemos resoluciones más pequeñas las imagenes no bajan como con <strong>float</strong> si no que quedan ensimadas unas con otras.</p>
+						<figure class="f_pikachu">
+							<img src="img/pikachu_display_two.png" alt="pikachu" title="pikachu">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<h3>Flexbox</h3>
+						<p>Es un módulo de CSS de modelo flexible de caja, es súper genial nos ayuda mucho a arreglar casi todos los problemas que tenemos de maquetación.</p>
+						<p>Es muy fácil de usar solo hay que asignar la propiedad <strong>display flex</strong> al la caja contenedora y con eso ya esta.</p>
+						<figure class="f_display_flex">
+							<img src="img/display_flex_prefix.png" alt="displa flex" title="displa flex">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>Provee un forma más eficiente de maquetar, cubriendo espacios disponibles, expandiento elementos o encogiéndolos. Esto quiere decir que cuando yo tenga un elemento <strong>flexbox</strong>, todos los hijos tomaran sus comportamientos.</p>
+						<figure class="f_display_flex">
+							<img src="img/display_flex_father.png" alt="displa flex father" title="displa flex father">
+						</figure>
+						<p>Para entender un poco mejor este concepto lo vamos a dividir en dos partes.</p>
+					</section>
+					<section class="f_vs_d">
+						<h3>1.- Eje Horizontal <strong>(X)</strong></h3>
+						<p>En este eje horizontal hay una serie de características con las que podemos jugar.</p>
+					</section>
+					<section class="f_vs_d">
+						<p>Básicamente son modificables o alterables, con el</p>
+						<p><strong>justify-content</strong></p>
+						<figure class="f_justify_content">
+							<img src="img/justify_content.png" alt="justify content" title="justify content">
+						</figure>
+						<p>El <strong>justify-content</strong> nos dice  donde y como queremos alinear los elementos dentro de esa caja de flexbox.</p>
+					</section>
+					<section class="f_vs_d">
+						<p>El pequeño código que acabamos de ver nos dice que se van a alinear al principio <strong>(flex-start es el valor por defecto)</strong>.</p>
+						<figure class="f_flex_start border">
+							<img src="img/flex_start.png" alt="flex start" title="flex start">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>Sin embargo si nosotros cambiamos esa propiedad a <strong>flex-end</strong>, obiamente se va la derecha.</p>
+						<figure class="f_flex_end_code">
+							<img src="img/flex_end_code.png" alt="flex end code" title="flex end code">
+						</figure>
+						<figure class="f_flex_end border">
+							<img src="img/flex_end.png" alt="flex end" title="flex end">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>Algo genial es que igual los podemos centrar</p>
+						<figure class="f_flex_end">
+							<img src="img/center_code.png" alt="flex end" title="flex end">
+						</figure>
+						<figure class="f_center border">
+							<img src="img/center.png" alt="center" title="center">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>Pero no solo eso, aun hay más, <strong>space-between</strong> lo que hace es meter todo el espacio sobrante entre los elementos.</p>
+						<figure class="f_space_between">
+							<img src="img/space_between_code.png" alt="space between code" title="space between code">
+						</figure>
+						<figure class="f_space_between border">
+							<img src="img/space_between.png" alt="space between" title="space between">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>Aun no acabamos, hay más ...</p>
+						<p><strong>space-around</strong> hace lo mismo que <strong>space-between</strong> pero igual toma en cuenta el borde de la caja.</p>
+						<figure class="f_space_around">
+							<img src="img/space_around_code.png" alt="space around code" title="space around code">
+						</figure>
+						<figure class="f_space_around border">
+								<img src="img/space_around.png" alt="space around" title="space around">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<h3>Qué pasa si los items no caben?</h3>
+						<p>Por defecto los items se van a quedar todos ahí apretados, la propiedad <strong>flex-wrap</strong> es la que define el comportamiento, y por defecto es <strong>no wrap</strong>.</p>
+					</section>
+					<section class="f_vs_d">
+						<p>Sin embargo nosotros podemos cambiar eso.</p>
+						<figure class="f_wrap">
+							<img src="img/wrap_code.png" alt="wrap code" title="wrap code">
+						</figure>
+						<figure class="f_wrap border">
+								<img src="img/wrap.png" alt="wrap" title="wrap">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<h3>2.- Eje Vertical <strong>(Y)</strong></h3>
+						<p>Es muy parecida al eje horizontal, las misma teoría, pero las alineaciones cambian un poco.</p>
+					</section>
+					<section class="f_vs_d">
+						<p>En vez de utilizar <strong>justify-contents</strong> utilizamos <strong>align-items.</strong></p>
+						<figure class="f_align_items_start">
+								<img src="img/align_items_start_code.png" alt="align items start code" title="align items start code">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>Esto quiere decir todos arriba, del todo.as</p>
+						<figure class="f_align_items_start border">
+								<img src="img/align_items_start.png" alt="align items start" title="align items start">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>Pero igual nosotros podemos alinearlos abajo, gracais a <strong>flex-end</strong>.</p>
+						<figure class="f_align_items_end">
+								<img src="img/align_items_end_code.png" alt="align items end code" title="align items end code">
+						</figure>
+						<figure class="f_align_items_end border">
+								<img src="img/align_items_end.png" alt="align items end " title="align items end ">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>Incluso podemos centrar los elementos.</p>
+						<figure class="f_align_items_center">
+								<img src="img/align_items_center_code.png" alt="align items center code" title="align items center code">
+						</figure>
+						<figure class="f_align_items center border">
+								<img src="img/align_items_center.png" alt="align items center " title="align items center ">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>Pero más interesante aun, es que podemos hacer que ocupe el total de altura del contenedor.</p>
+						<figure class="f_align_items_stretch">
+								<img src="img/align_items_stretch_code.png" alt="align items stretch code" title="align items stretch code">
+						</figure>
+						<figure class="f_align_items stretch border">
+								<img src="img/align_items_stretch.png" alt="align items stretch " title="align items stretch ">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>Todo esto a sido hermoso y te aseguro que tu cabeza exploto igual que la mía, pero por ahora solo hemos tocado el contendor, <strong>¿Qué tal si jugamos con los items (hijos)?</strong></p>
+					</section>
+					<section class="f_vs_d">
+						<p>A los hijos podemos asignarles varias propiedades flex igual que a su contenedor (padre).</p>
+					</section>
+					<section class="f_vs_d">
+						<h3>Order</h3>
+						<p>Este define el orden de cada elemento, un orden concreto entre el conjunto, eso quiere dicir que nosotros podemos modificar el orden independientemente de como este escrito en el HTML</p>
+						<p><span>Todos ellos tiene un <strong>order</strong> de 0 por defecto.</span></p>
+						<figure class="f_platzi">
+								<img src="img/platzi_code.png" alt="platzi code" title="platzi code">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>Si el <strong>order</strong> 0 de platzi lo cambiamos a 1 se ira al final.</p>
+						<figure class="f_order">
+								<img src="img/order.png" alt="order" title="order">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>Para moverlo a la izquierda usamos <strong>order: -1</strong></p>
+						<figure class="f_order">
+								<img src="img/order_two.png" alt="order" title="order">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<h3>flex-grow</h3>
+						<p>El <strong>flex-grow</strong> nos dice que cada uno ocupe lo que tenga que ocupar, es decir que su ancho sera la suma del resto de elementos.</p>
+						<p>Si tenemos un <strong>flex-grow: 2;</strong> su ancho sera la suma de dos elementos.</p>
+						<figure class="f_platzi">
+								<img src="img/platzi_code_two.png" alt="platzi code" title="platzi code">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p>Practicamente nuestro primer elemento pasa a tener el ancho de los otros dos elementos.</p>
+						<figure class="f_grow">
+								<img src="img/grow.png" alt="grow" title="grow">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<h3>align-self</h3>
+						<p>Es muy similar a <strong>align-items</strong> pero solo se lo podemos aplicar a uno de ellos, si nostros tenemos en uno de nuestros contenedores, un <strong>align-item: flex-start</strong> y queremos que uno solo de ellos baje aplicamos <strong>align-self</strong>.</p>
+						<figure class="f_self">
+								<img src="img/align_self_code.png" alt="self code" title="self code">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p><strong>align-items</strong> para el contenedor y <strong>align-self</strong> para los hijos.</p>
+						<figure class="f_self border">
+								<img src="img/align_self.png" alt="self" title="self">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<h3>flex-basis</h3>
+						<p>Esta propiedad es muy útil e interesante y quiere decir que un elemento va a tener la medida que nosotros le digamos en <strong>flex-basis</strong>, con esto los demás elementos se van a comportar en base a este.</p>
+					</section>
+					<section class="f_vs_d">
+						<figure class="f_basis">
+								<img src="img/basis.png" alt="basis" title="basis">
+						</figure>
+						<figure class="f_basis">
+								<img src="img/basis_code_html.png" alt="basis html" title="basis html">
+						</figure>
+						<figure class="f_basis">
+								<img src="img/basis_code_css.png" alt="basis css" title="basis css">
+						</figure>
+					</section>
+					<section class="f_vs_d">
+						<p class="aviso">No hay que usar siempre <strong>flexbox</strong>, hay que utilizar lo apropiado a nuestras necesidades.</p>
+						<p><strong>Nota:</strong> No hay que usar float en nuestros documentos, causan muchos problemas.</p>
+					</section>
+					<section class="f_vs_d"></section>
 				</section>
 				<section class="clases" data-background="#4393fa">
 					<h2>Clase 3</h2>
@@ -491,7 +733,7 @@
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
-		<script src="lib/js/retina.min.js"></script>
+		<!--<script src="lib/js/retina.min.js"></script> -->
 
 		<script>
 
