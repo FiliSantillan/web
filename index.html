@@ -665,6 +665,285 @@
 						<p><strong>Nota:</strong> No hay que usar float en nuestros documentos, causan muchos problemas.</p>
 					</section>
 				</section>
+				<section>
+					<section class="unidades">
+						<h2>Unidades de medida</h2>
+					</section>
+					<section class="unidades">
+						<h3>em</h3>
+						<p>La unidad de medida <strong>em</strong> hereda el tamaño de fuente de su contenedor.</p>
+						<figure class="f_em">
+								<img src="img/em_code_html.png" alt="em html" title="em html">
+						</figure>
+						<figure class="f_em">
+								<img src="img/em_code_css.png" alt="em css" title="em css">
+						</figure>
+						<p>Esto quiere decir que el enlace <strong>(etiqueta <span class="code_html">a</span>)</strong> va a tener un tamaño de fuente de 16px, ya que el <strong><span class="code_html">h1</span></strong> es de 32px.</p>
+					</section>
+					<section class="unidades">
+						<p>En este caso la etiqueta <strong><span class="code_html">a</span></strong> va a tener un tamaño de fuente de 32px.</p>
+						<figure class="f_em">
+								<img src="img/em_code_css2.png" alt="em css" title="em css">
+						</figure>					</section>
+					<section class="unidades">
+						<p>Esta unidad de medida es muy util, pero suele fallar y no dar un tamaño exacto cuando hay más profundidad.</p>
+						<figure class="f_em">
+								<img src="img/em_code_html2.png" alt="em html" title="em html">
+						</figure>		
+						<figure class="f_em">
+								<img src="img/em_code_css3.png" alt="em css" title="em css">
+						</figure>		
+					</section>
+					<section class="unidades">
+						<p><ul>
+							<li><strong class="code_html">h1</strong> Tamaño de fuente 32px</li>
+							<li><strong class="code_html">a</strong> Tamaño de fuente 16px</li>
+							<li><strong class="code_html">span</strong> Tamaño de fuente 8px</li>
+						</ul></p>
+					</section>
+					<section class="unidades">
+						<h3>rem</h3>
+						<h3><strong>Root em</strong></h3>
+						<p>Es igual de funcional que el <strong>em</strong> pero el tamaño de fuente depende de la raíz del documento, no en su contenedor.</p>
+					</section>
+					<section class="unidades">
+						<p>La raíz de nuestro documento es el <strong class="code_html">html</strong> </p>
+						<figure class="f_rem">
+								<img src="img/rem_code.png" alt="rem css" title="rem css">
+						</figure>
+					</section>
+					<section class="unidades">
+						<p><strong>rem</strong> es muy útil para hacer <strong>mobile first</strong>, y practico para trabajar con nuestros proyectos.</p>
+						<p>En cuanto a <strong>em</strong> es muy útil para cuando necesitamos unidades especificas al contenedor <strong>(padre)</strong>.</p>
+					</section>
+					<section class="unidades">
+						<h3>viewport-width</h3>
+						<h3>viewport-height</h3>
+						<p>Nosotors podemos tener el procentaje de un valor pero igual podemos tener el ancho total de nuestra pantalla.</p>
+					</section>
+					<section class="unidades">
+						<p>Podemos usar la altura total basada en el dispositivo.</p>
+						<figure class="f_vh">
+								<img src="img/vh_html.png" alt="vh html" title="vh html">
+						</figure>
+						<figure class="f_vh">
+								<img src="img/vh_css.png" alt="vh css" title="vh css">
+						</figure>
+						<p>El alto del contenedor va a ser el alto del dispositivo.</p>
+					</section>
+					<section class="unidades">
+						<p>Igual lo podemos aplicar con el ancho.</p>
+						<figure class="f_vw">
+								<img src="img/vw_css.png" alt="vw css" title="vw css">
+						</figure>
+						<p>El ancho del contenedor va a se la mitad del ancho del dispositivo.</p>
+					</section>
+				</section>
+				<section>
+					<section class="bem">
+						<h2>Metodología BEM</h2>
+						<h3><strong>Block -> element -> modifier</strong></h3>
+					</section>
+					<section class="bem">
+						<p>Esta metodología implica crear una especie de <strong>módulo</strong> para que sea reutilizable.</p>
+						<figure class="f_BEM">
+								<img src="img/BEM.png" alt="BEM" title="BEM">
+						</figure>
+					</section>
+					<section class="bem">
+						<p>La estructura de nuestro HTML:</p>
+						<figure class="f_BEM">
+								<img src="img/BEM_html.png" alt="BEM html" title="BEM html">
+						</figure>
+					</section>
+					<section class="bem">
+						<p>La estructura de nuestro CSS:</p>
+						<figure class="f_BEM">
+								<img src="img/BEM_css.png" alt="BEM css" title="BEM css">
+						</figure>
+					</section>
+					<section class="bem">
+						<p>Esta es una forma fácil de identificar los elementos y no perderse en el código, pero más importante es que podemo reutilizar el código.</p>
+						<figure class="f_BEM">
+								<img src="img/BEM_html2.png" alt="BEM html" title="BEM html">
+						</figure>
+						<figure class="f_BEM">
+								<img src="img/BEM_html3.png" alt="BEM html" title="BEM html">
+						</figure>
+						<figure class="f_BEM">
+								<img src="img/BEM_css2.png" alt="BEM css" title="BEM css">
+						</figure>
+						<p>Tanto como <strong class="code_html">h4</strong> y <strong class="code_html">span</strong> van a tener las mismas propiedades.</p>
+					</section>
+				</section>
+				<section>
+					<section class="pseudo">
+						<h2>Pseudo selectores</h2>
+					</section>
+					<section class="pseudo">
+						<p>Los pseudo selectores los podemos dividir en dos partes.</p>
+						<ol>
+							<li>Pseudo Elementos</li>
+							<li>Pseudo Classes</li>
+						</ol>
+					</section>
+					<section class="pseudo">
+						<h3>Pseudo Elementos</h3>
+						<p>El pseudo elemento, es algo que físicamente en el HTML no existe pero lógicamente con CSS lo podemos crear.</p>
+					</section>
+					<section class="pseudo">
+						<p>Por el momento ahora existen cinco</p>
+						<figure class="f_pseudo">
+								<img src="img/pseudo_elements.png" alt="pseudo elements" title="pseudo elements">
+						</figure>
+					</section>
+					<section class="pseudo">
+						<p>Cuando nosotros tenemos un elemento podemos definir ese <strong>pseudo elemento </strong> antes o déspues.</p>
+						<figure class="f_pseudo">
+								<img src="img/pseudo_element.png" alt="pseudo element example" title="pseudo element example">
+						</figure>
+						<p>Algo importante es que siempre debe de tener la propiedad <strong>content</strong>, aunque este vacio.</p>
+					</section>
+					<section class="pseudo">
+						<p>Esto nos quita el trabajo y evitamos modificar el HTML.</p>
+						<figure class="f_pseudo">
+								<img src="img/span_element_html.png" alt="pseudo element html" title="pseudo element example">
+						</figure>
+						<figure class="f_pseudo">
+								<img src="img/span_element_css.png" alt="pseudo element css" title="pseudo element example">
+						</figure>
+						<span class="code_html">Filiberto Santillán</span>
+					</section>
+					<section class="pseudo">
+						<h3>Pseudo Classes</h3>
+						<p>De estas hay muchas y nos pueden ayudar un tipo de elemento o diferentes.</p>
+					</section>
+					<section class="pseudo">
+						<h3>Formularios</h3>
+						<p>
+							<ul>
+								<li>:checked</li>
+								<li>:disabled</li>
+								<li>:focus</li>
+								<li>:hover</li>
+								<li>:in-range</li>
+								<li>:invalid</li>
+								<li>:out-of-range</li>
+								<li>:required</li>
+								<li>:target</li>
+								<li>:valid</li>
+							</ul>
+						</p>
+					</section>
+					<section class="pseudo">
+						<h3>Links</h3>
+						<p>
+							<ul>
+								<li>:focus</li>
+								<li>:hover</li>
+								<li>:link</li>
+								<li>:visited</li>
+							</ul>
+						</p>
+					</section>
+					<section class="pseudo">
+						<h3>Listas</h3>
+						<p>
+							<ul>
+								<li>:first-child</li>
+								<li>:first-of-type</li>
+								<li>:last-child</li>
+								<li>:last-of-type</li>
+								<li>:nth-child( )</li>
+								<li>:nth-child( )</li>
+								<li>:nth-last-child( )</li>
+								<li>:nth-of-type</li>
+								<li>:only-child</li>
+								<li>:only-of-type</li>
+							</ul>
+						</p>
+					</section>
+					<section class="pseudo">
+						<p>Las <strong>pseudo classes</strong> para lista son bastante interesantes, porque nos permiten seleccionar elementos sin usar HTML o una clase.</p>
+					</section>
+					<section class="pseudo">
+						<h3>:first-child</h3>
+						<p><strong>Selecciona el primer elemento de una lista.</strong></p>
+						<figure class="f_pseudo_class">
+								<img src="img/first.png" alt="first-child" title="first-child">
+						</figure>
+					</section>
+					<section class="pseudo">
+						<h3>:last-child</h3>
+						<p><strong>Selecciona el ultimo elemento de una lista.</strong></p>
+						<figure class="f_pseudo_class">
+								<img src="img/last.png" alt="last-child" title="last-child">
+						</figure>
+					</section>
+					<section class="pseudo">
+						<h3>:nth-child( n )</h3>
+						<p><strong>Selecciona elementos en concreto.</strong></p>
+						<p>Por ejemplo <strong>:nth-child ( 2 ).</strong></p>
+						<figure class="f_pseudo_class">
+								<img src="img/nth.png" alt="nth-child" title="nth-child">
+						</figure>
+					</section>
+					<section class="pseudo">
+						<h3>:nth-child( n+3 )</h3>
+						<p><strong>Selecciona elementos hacia adelante a partir de un número.</strong></p>
+						<figure class="f_pseudo_class">
+								<img src="img/nth2.png" alt="nth-child" title="nth-child">
+						</figure>
+					</section>
+					<section class="pseudo">
+						<h3>:nth-child( -n+3 )</h3>
+						<p><strong>Selecciona elementos hacia atras a partir de un número.</strong></p>
+						<figure class="f_pseudo_class">
+								<img src="img/nth3.png" alt="nth-child" title="nth-child">
+						</figure>
+					</section>
+					<section class="pseudo">
+						<h3>:nth-child( 3n+1 )</h3>
+						<p><strong>Selecciona el primer elemento y continua seleccionando cada tres elementos más.</strong></p>
+						<figure class="f_pseudo_class">
+								<img src="img/nth4.png" alt="nth-child" title="nth-child">
+						</figure>
+					</section>
+					<section class="pseudo">
+						<h3>:nth-child( 3n+2 )</h3>
+						<p><strong>Selecciona el segundo elemento y continua seleccionando cada tres elementos más.</strong></p>
+						<figure class="f_pseudo_class">
+								<img src="img/nth5.png" alt="nth-child" title="nth-child">
+						</figure>
+					</section>
+					<section class="pseudo">
+						<h3>:nth-type( 2 )</h3>
+						<p><strong>Selecciona por tipo de elemento.</strong></p>
+						<figure class="f_pseudo_class">
+								<img src="img/nth6.png" alt="nth-type" title="nth-ype">
+						</figure>
+					</section>
+					<section class="pseudo">
+						<p>Todo esto lo podemmos aplicar en conjunto y hacer grandes cosas.</p>
+						<figure class="f_pseudo">
+								<img src="img/child_html.png" alt="nth-child code" title="nth-child code">
+						</figure>
+						<figure class="f_pseudo">
+								<img src="img/child_css.png" alt="nth-child code" title="nth-child code">
+						</figure>
+					</section>
+					<section class="pseudo">
+						<p>Podemos usar <strong>content</strong> distintas formas</p>
+						<figure class="f_pseudo">
+								<img src="img/content_html.png" alt="content html code" title="content html code">
+						</figure>
+						<figure class="f_pseudo">
+								<img src="img/content_css.png" alt="content css code" title="content css code">
+						</figure>
+						<p>Como resultado:</p>
+						<strong data-unidad=" C" class="temperatura">5</strong>
+					</section>
+				</section>
 				<section class="clases" data-background="#4393fa">
 					<h2>Clase 3</h2>
 					<h3>13 - Febrero - 2015</h3>

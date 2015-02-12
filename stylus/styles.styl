@@ -176,6 +176,17 @@ header
 	img
 		border 2px solid black !important
 		
+.code_html::before
+	content "<"
+	
+.code_html::after
+	content ">"
+	
+.temperatura::after{
+	content: attr(data-unidad);
+}
+	
+		
 @keyframes parpadeo_navigation
 	40%
 		transform scale(1.5)
