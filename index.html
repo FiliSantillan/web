@@ -121,7 +121,7 @@
 						<a href="#/10">Clase 2</a>
 						<a href="#/15">Clase 3</a>
 						<a href="#/21">Clase 4</a>
-						<a href="#/22">Clase 5</a>
+						<a href="#/27">Clase 5</a>
 						<!-- <a href="#/14">Clase 6</a> -->
 					</div>
 				</section>
@@ -420,7 +420,7 @@
 						<a href="#/4">Clase 1</a>
 						<a href="#/15">Clase 3</a>
 						<a href="#/21">Clase 4</a>
-						<a href="#/22">Clase 5</a>
+						<a href="#/27">Clase 5</a>
 						<!-- <a href="#/14">Clase 6</a> -->
 					</div>
 				</section>
@@ -951,7 +951,7 @@
 						<a href="#/4">Clase 1</a>
 						<a href="#/10">Clase 2</a>
 						<a href="#/21">Clase 4</a>
-						<a href="#/22">Clase 5</a>
+						<a href="#/27">Clase 5</a>
 						<!-- <a href="#/14">Clase 6</a> -->
 					</div>
 				</section>
@@ -1244,18 +1244,240 @@
 				</section>
 				<section class="clases" data-background="#4393fa">
 					<h2>Clase 4</h2>
-					<h3>19 - Febrero - 2015</h3>
+					<h3>Conceptos Básicos de JS y JQuery</h3>
 					<div class="buttons">
 						<a href="#/4">Clase 1</a>
 						<a href="#/10">Clase 2</a>
 						<a href="#/15">Clase 3</a>
-						<a href="#/22">Clase 5</a>
+						<a href="#/27">Clase 5</a>
 						<!-- <a href="#/17">Clase 6</a> -->
 					</div>
 				</section>
+				<section>
+					<section class="bases">
+						<h2>Bases de desarrollo web moderno</h2>
+					</section>
+					<section class="bases">
+						<p>Anteriormente las aplicaciones web eran como un trozo bastante grande que estaba muy mezcldo y no había separación de conceptos, en la web moderna se esta empezando a hacer separaciones como <strong>Backend & Frontend</strong>.</p>
+					</section>
+					<section class="bases">
+						<h3>Cliente - Servidor </h3>
+						<figure class="f_bases">
+							<img src="img/web-server.png" alt="web-server" title="web-server">
+						</figure>
+						<p>Un cliente realiza peticiones a otro programa <strong>(servidor)</strong>, quien es el que le da un respuesta.</p>
+					</section>
+					<section class="bases">
+						<p>No necesitamos un <strong>Backend</strong> en epecifico, podemos utilizar simplemente <strong>JavaScript</strong> para tomar un <strong>JSON</strong> y dependiendo de los elementos que nos lleguen, podemos cambiar nuestra web.</p>
+					</section>
+					<section class="bases">
+						<figure class="f_bases">
+							<img src="img/web-server-db.png" alt="web-server-db" title="web-server-db">
+						</figure>
+						<p>La otra capa seria nuestra <strong>base de datos</strong>.
+						</p>
+					</section>
+					<section class="bases">
+						<p>En esta <strong>base de datos</strong> se guardan cosas de nuestra aplicación, como usuarios, artículos, comentarios, etc.</p>
+					</section>
+					<section class="bases">
+						<p>Para nuestro caso vamos a aprender el lado del cliente <strong>(navegador)</strong>.</p>
+						<figure class="f_bases">
+							<img src="img/frontend.png" alt="frontend" title="frontend">
+						</figure>
+						<p>
+							<ol>
+								<li>Estructura semantica: <strong>HTML</strong>.</li>
+								<li>Estilos: <strong>CSS</strong>.</li>
+								<li>Dinamismo: <strong>JavaScript</strong>.</li>
+							</ol>
+						</p>
+					</section>
+				</section>
+				<section>
+					<section class="json_api">
+						<h2>Definición de JSON y API Rest</h2>
+					</section>
+					<section class="json_api">
+						<h3>API REST</h3>
+						<p>No es más que una forma de comunicarnos con nuetro <strong>Backend</strong> y aislar por completo como esta escrito, es decir que no importa si el <strong>Backend</strong> esta hecho en <strong>node, python o ruby</strong>, lo importante es que cada petición que hagamos al servidor, nos devuelva un formato de mensaje, en este caso <strong>JSON.</strong></p>
+					</section>
+					<section class="json_api">
+						<h3>JSON</h3>
+						<strong>(JavaScript Object Notation)</strong>
+						<p>Se llama así porque de esta forma es como se declara un objeto en <strong>JavaScript</strong>.</p>
+						<figure class="f_json">
+							<img src="img/code_json.png" alt="JSON" title="JSON">
+						</figure>
+					</section>
+					<section class="json_api">
+						<p>Esto nos sirve para nuestra web y poder tomar datos.</p>
+						<p>No importa como nos devuelve este formato, lo que importa es nos hace más fácil la comunicación entre el <strong>Frontend & Backend</strong>.</p>
+					</section>
+					<section class="json_api">
+						<p>En nuestra <strong>API REST</strong> normalmente tenemos cuatro métodos o vervos de el protocolo <strong>HTTP</strong>.</p>
+						<figure class="f_json border">
+							<img src="img/http.png" alt="http" title="http">
+						</figure>
+					</section>
+					<section class="json_api">
+						<p>Dependiendo de la respuesta del servidor a cada método, podemos saber si ha funcionado, si hay un error, o que a pasado realmente.</p>
+						<figure class="f_json border">
+							<img src="img/http2.png" alt="http" title="http">
+						</figure>
+					</section>
+					<section class="json_api">
+						<h3>JSON vs CORS</h3>
+						<p>Dentro de <strong>API REST</strong> hay dos formatos para comunicarnos. JavaScript tiene el problema o incombeniente de que si estamos llamando desde una url a otra, nos va a lanzar un error.
+						</p>
+						<p><strong>Same-Origin Policy</strong>.</p>
+					</section>
+					<section class="json_api">
+						<p>Esto significa que solo se puede acceder al <strong>DOM</strong> si el script está en el mismo origen <strong>(esquema, hostname, puerto)</strong>.</p>
+						<p>Para esto hay dos alternativas:</p>
+						<p>
+							<ol>
+								<li><strong>JSONP</strong></li>
+								<li><strong>CORS</strong></li>
+							</ol>
+						</p>
+					</section>
+					<section class="json_api">
+						<h3>JSONP</h3>
+						<strong>(JSON con Padding)</strong>
+						<p>
+							<ul>
+								<li>Muchas <strong>APIS</strong> públicas funcionan con <strong>JSONP</strong>, necesita una función de <strong>Callback</strong> en la llamada al <strong>API</strong>.</li>
+								<li>ej: <strong>http://api.com/recursos/?callback=MiFuncionDeCallback</strong></li>
+								<li>Solo Permite el método <strong>GET</strong> de <strong>HTTP</strong>.</li>
+							</ul>
+						</p>
+					</section>
+					<section class="json_api">
+						<h3>CORS</h3>
+						<strong>(Cross-Origin Resource Sharing)</strong>
+						<p>
+							<ul>
+								<li>Permite más metodos de HTTP <strong>(GET, POST, PUT, DELETE)</strong>.</li>
+								<li>Ha de configurarse en el servidor, podemos elegir a quién dar acceso.</li>
+							</ul>
+						</p>
+						<p>Pero igualmente que en <strong>JSONP</strong> esto como desarrolladores de <strong>Frontend</strong> no podemos cambiarlo, si no que hay que configurarlo en el <strong>Backend</strong></p>
+					</section>
+				</section>
+				<section>
+					<section class="conceptos">
+						<h2>DOM, BOM, JSON, AJAX</h2>
+					</section>
+					<section class="conceptos">
+						<h3>DOM</h3>
+						<strong>(Document Object Model)</strong>
+						<p>En el <strong>HTML</strong> al igual hay <strong>APIS</strong> una de ellas es el <strong>DOM</strong>, que se creo para que con <strong>JavaScript</strong> pudiéramos acceder a los elementos.</p>
+						<p>Es una estructura como en un árbol, en donde la raíz principal es el <strong>HTML</strong>.</p>
+						<figure class="f_conceptos">
+							<img src="img/dom.png" alt="DOM" title="DOM">
+						</figure>
+					</section>
+					<section class="conceptos">
+						<h3>BOM</h3>
+						<strong>(Browser Object Model)</strong>
+						<p>Digamos que el <strong>DOM</strong> es toda la parte que hay en un navegador, pero el <strong>BOM</strong> es toda esa parte que hay afuera, digamos que es la parte que nos permite acceder a <strong>location o a history</strong>, gracias a <strong>JavaScript</strong>.</p>
+						<figure class="f_conceptos">
+							<img src="img/bom.png" alt="BOM" title="BOM">
+						</figure>
+					</section>
+					<section class="conceptos">
+						<h3>AJAX</h3>
+						<strong>(Asynchronous JavaScript And XML)</strong>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/_ybgWmSCAu8" frameborder="0" allowfullscreen></iframe>
+					</section>
+					<section class="conceptos">
+						<h3>JQUERY</h3>
+						<p>Es una librería escrita en <strong>JavaScript</strong>, que nos permite ahorrar tiempo en cosas repetitivas, como añadir elementos o seleccionar elementos. Hay gente que confunde <strong>JQUERY</strong> como un lenguaje o un framework, cuando la definición correcta es librería.</p>
+					</section>
+					<section class="conceptos">
+						<p>Petición <strong>AJAX</strong> con <strong>JavaScript</strong></p>
+						<figure class="f_conceptos">
+							<img src="img/ajax_js.png" alt="Petición Ajax con JS" title="Petición Ajax con JS">
+						</figure>
+					</section>
+					<section class="conceptos">
+						<p>Petición <strong>AJAX</strong> con <strong>JQUERY</strong></p>
+						<figure class="f_conceptos">
+							<img src="img/ajax_jq.png" alt="Petición Ajax con JQ" title="Petición Ajax con JQ">
+						</figure>
+					</section>
+					<section class="conceptos">
+						<p>Petición <strong>AJAX</strong> con <strong>JQUERY</strong> y <strong>JSON</strong></p>
+						<figure class="f_conceptos">
+							<img src="img/ajax_jq2.png" alt="Petición Ajax con JQ" title="Petición Ajax con JQ">
+						</figure>
+					</section>
+				</section>
+				<section>
+					<section class="tag_template">
+						<h2>Etiqueta Template en HTML5</h2>
+					</section>
+					<section class="tag_template">
+						<p><strong>Template</strong> no es más que un elemento <strong>HTML</strong> que el navegador no muestra, es decir le podemos poner estilos, entre otras cosas, pero el navegador no lo va a mostrar hasta que nosotros lo activemos.
+						<figure class="f_tag_template">
+							<img src="img/code_template_html.png" alt="Tag Template HTML" title="Tag Template HTML">
+						</figure>
+					</section>
+					<section class="tag_template">
+						<p>Para nostros poder acceder al <strong>template</strong> utilizamos <strong>JavaScript</strong>.</p>
+						<figure class="f_tag_template">
+							<img src="img/code_template_js.png" alt="Tag Template JS" title="Tag Template JS">
+						</figure>
+					</section>
+					<section class="tag_template">
+						<p>Como resulatado lo que aria es lo siguiente:</p>
+						<figure class="f_tag_template">
+							<img src="img/code_template_html2.png" alt="Tag Template HTML" title="Tag Template HTML">
+						</figure>
+					</section>
+				</section>
+				<section>
+					<section class="geolocation">
+						<h2>Geolocation</h2>
+					</section>
+					<section class="geolocation">
+						<p>Tenemos una <strong>API</strong> con la que accedemos a varios elementos ajenos o externos a lo que es nuestro <strong>HTML</strong> en la web.</p>
+						<p>En este caso es <strong>navigator</strong>.</p>
+						<figure class="f_tag_template">
+							<img src="img/code_navigator.png" alt="Tag navigator js" title="Tag navigator js">
+						</figure>
+					</section>
+					<section class="geolocation">
+						<p>En <strong>errorFound</strong> nos devuelve un parámetro en este caso <strong>(err)</strong> donde nos indica que tipo de error a ocurrido.</p>
+						<p>
+							<ol>
+								<li>Error desconocido.</li>
+								<li>Permiso denegado.</li>
+								<li>Posición no disponible: Proveedor de internet.</li>
+								<li>Timeout: Tiempo de espera en localizar.</li>
+							</ol>
+						</p>
+					</section>
+					<section class="geolocation">
+						<p>La función <strong>getCoords</strong> va a ser la que nos devuelve las coordenadas, con un objeto <strong>(position)</strong>.</p>
+						<p>Dentro del <strong>position</strong> tenemos otro sub-objeto con dos variables.</p>
+						<p>
+							<ol>
+								<li>Latitud</li>
+								<li>Longitud</li>
+							</ol>
+						</p>
+					</section>
+					<section class="geolocation">
+						<figure class="f_tag_template">
+							<img src="img/code_navigator_js.png" alt="Navigator js" title="Navigator js">
+						</figure>
+					</section>
+				</section>
 				<section class="clases" data-background="#4393fa">
 					<h2>Clase 5</h2>
-					<h3>20 - Febrero - 2015</h3>
+					<h3>Closures, Jquery y LocaStorage en nuestra aplicación</h3>
 					<div class="buttons">
 						<a href="#/4">Clase 1</a>
 						<a href="#/10">Clase 2</a>
